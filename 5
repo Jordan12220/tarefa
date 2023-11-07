@@ -1,0 +1,55 @@
+# Função para somar dois números
+def somar(a, b):
+    return a + b
+
+# Função para subtrair dois números
+def subtrair(a, b):
+    return a - b
+
+# Função para multiplicar dois números
+def multiplicar(a, b):
+    return a * b
+
+# Função para dividir dois números
+def dividir(a, b):
+    if b != 0:
+        return a / b
+    else:
+        return "Erro: divisão por zero!"
+
+# Menu principal da calculadora
+def menu():
+    print("Selecione uma operação:")
+    print("1. Somar")
+    print("2. Subtrair")
+    print("3. Multiplicar")
+    print("4. Dividir")
+    print("5. Sair")
+
+# Loop principal do programa
+while True:
+    menu()
+    opcao = input("Digite o número da operação desejada: ")
+    
+    if opcao == "5":
+        break
+    
+    num1 = float(input("Digite o primeiro número: "))
+    num2 = float(input("Digite o segundo número: "))
+    
+    if opcao == "1":
+        resultado = somar(num1, num2)
+        print("Resultado: ", resultado)
+    elif opcao == "2":
+        resultado = subtrair(num1, num2)
+        print("Resultado: ", resultado)
+    elif opcao == "3":
+        resultado = multiplicar(num1, num2)
+        print("Resultado: ", resultado)
+    elif opcao == "4":
+        resultado = dividir(num1, num2)
+        print("Resultado: ", resultado)
+    else:
+        print("Opção inválida!")
+
+print("Calculadora encerrada.")
