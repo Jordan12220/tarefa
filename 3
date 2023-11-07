@@ -1,0 +1,16 @@
+mulheres = []
+homens = []
+
+print("Digite o nome de três mulheres:")
+for i in range(3):
+    nome_mulher = input("Mulher " + str(i+1) + ": ")
+    mulheres.append(nome_mulher)
+
+print("\nDigite o nome de três homens:")
+for i in range(3):
+    nome_homem = input("Homem " + str(i+1) + ": ")
+    homens.append(nome_homem)
+
+print("\nDuplas formadas:")
+for i in range(3):
+    print(homens[i], "e", mulheres[i])
