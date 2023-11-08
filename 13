@@ -1,0 +1,10 @@
+p = int(input("digite a idade da pessoas:"))
+media = 0
+idade = int(input(f"digite a idade da pessoa{i}:"))
+media = ((media * (i - 1))+ idade)/ i
+if media < 26:
+    print("A turma é jovem")
+elif media < 60:
+    print("A turma é adulto")
+else:
+    print(" A turma é idosa") 
